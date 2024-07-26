@@ -8,7 +8,16 @@ use app\controllers\sliderController;
 $sliderController = new sliderController();
 $imagenesSlider = $sliderController->seleccionarImgSlider();
 ?>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <title>Document</title>
+</head>
 <body>
 <table id="example" class="table table-striped" style="width:100%">
     <thead>
@@ -40,6 +49,9 @@ $imagenesSlider = $sliderController->seleccionarImgSlider();
         </tr>
     <?php } endforeach; ?>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    
     <script>
     $(document).ready(function(){
         $('#example').DataTable({
@@ -72,3 +84,5 @@ $imagenesSlider = $sliderController->seleccionarImgSlider();
 </script>
 
 </table>
+</body>
+</html>
